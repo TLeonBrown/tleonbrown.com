@@ -1,0 +1,56 @@
+:root {
+  --animate-duration: 900ms;
+  --animate-delay: 0s;
+}
+
+.cardItem-outer {
+    display: flex;
+    background-color: var(--bgColor);
+    padding: 1% 2% 1% 2%;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    border-radius: 20px;
+    filter: drop-shadow(7px 7px 0px #888888);
+    margin: 2%;
+    color: white;
+    pointer-events: all;
+    cursor: pointer;
+    @media screen and (max-width: 600px) {
+        width: 85%;
+        padding: 0;
+    }
+}
+
+.card-social-icon {
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+
+.card-social-text {
+    color: white;
+    width: 100%;
+}
+
+.card-social-text.text-secondary {
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.card-social-text.text-main {
+    @media screen and (max-width: 600px) {
+        font-size: 24px !important;    
+    }
+}
+
+.card-social-icon.icon-secondary {
+    @media screen and (max-width: 600px) {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 5%;
+    }
+}

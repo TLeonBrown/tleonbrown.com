@@ -1,0 +1,53 @@
+.profile-button {
+    fill: #333333;
+    color: #333333;
+    background-color: transparent;
+    border: none;
+    margin: 0%;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-button:hover {
+    fill: white !important;
+    color: white !important;
+    filter: drop-shadow(1px 1px 2px #545454);
+
+}
+
+.back-button-container {
+    display: flex;
+    width: 101%;
+    @media screen and (max-width: 600px) {
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin-top: 15%;
+    }
+}
+
+.back-button {
+    fill: #333333;
+    color: #333333;
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.back-button:hover {
+    fill: white !important;
+    filter: drop-shadow(1px 1px 2px #545454);
+}
+
+.profile-button:hover {
+    color: #333333;
+    fill: #333333;
+}
+
+.about-button {
+    margin-top: -2%;
+    font-size: 32px;
+}

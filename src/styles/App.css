@@ -1,0 +1,81 @@
+html {
+  background-color: #dddddd;
+}
+
+html * {
+  color: #000;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infobox-1-outer {
+  background-color: #ffffff;
+  margin-top: 10vh;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  filter: drop-shadow(7px 7px 0px #545454);
+  @media screen and (max-width: 600px) {
+    height: 120vh;
+    margin-bottom: 10%;
+    flex-direction: column;
+  }
+}
+
+.infobox-2a-profile {
+  width: 40%;
+  @media screen and (max-width: 600px) {
+    width: 95%;
+    margin-top: 20%;
+  }
+}
+
+.infobox-2b-socials {
+  flex-direction: column;
+  padding: 2%;
+  width: 60%;
+  @media screen and (max-width: 600px) {
+    width: 95%;
+  }
+}
+
+.infobox-3a-mainpages, .infobox-3b-subpages, .infobox-3c-subpages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.infobox-3a-mainpages {
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.infobox-3a-mainpages, .infobox-3b-subpages, .infobox-3c-subpages {
+  @media screen and (max-width: 600px) {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+.infobox-credits {
+  position: absolute;
+  top: 1vh;
+  margin-left: 0.25vw;
+  display: flex;
+  justify-content: left;
+  @media screen and (max-width: 600px) {
+    top: 10vh;
+    margin-left: 0;
+  }
+}
