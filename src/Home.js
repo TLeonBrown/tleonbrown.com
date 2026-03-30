@@ -11,9 +11,6 @@ export function Home () {
         <div className='App'>
             <div className='infobox-1-outer'>
                 <div className='infobox-2a-profile'>
-                    <div className='infobox-credits'>
-                        <CreditsButton />
-                    </div>
                 </div>
                 <div className='infobox-2b-socials'>
                     <h1>{TEXTS.HOME_MAIN}</h1>
@@ -25,7 +22,7 @@ export function Home () {
                         />
                         <SocialCardItem
                             social='resume'
-                            title=''
+                            title='Résumé'
                             url='src/assets/Resume 2026.pdf'
                         />
                         <SocialCardItem
@@ -35,7 +32,14 @@ export function Home () {
                         />
                     </div>
                     <div className='infobox-2c-about-me'>
-                        
+                        {TEXTS.HOME_SECONDARY.map(line => {
+                            return <div className='about-me-line'>
+                                <l >{line}</l>
+                            </div>
+                        })}
+                    </div>
+                    <div className='infobox-2d-more'>
+                        <CreditsButton />
                     </div>
                 </div>
             </div>

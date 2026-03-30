@@ -34,22 +34,24 @@ export function SocialCardItem ({ type, social, title, url }) {
         case 'github':
             SocialIcon = IconGithub
             break
-        default:
+        case 'resume':
             SocialIcon = IconResume
+            break
+        default:
+            SocialIcon = undefined
             break
     }
 
     // Dynamic stylings for "main" & "secondary" socials
     let fontSize = type === 'main' ? SIZES.FONT_SIZE_MAIN : SIZES.FONT_SIZE_SECONDARY
     let iconSize = type === 'main' && !isMobile ? SIZES.ICON_SIZE_MAIN : SIZES.ICON_SIZE_SECONDARY
-    let animationType = type === 'main' ? ANIMATION_TYPES.MAIN : ANIMATION_TYPES.SECONDARY
 
     // Handle mouse-over animations
     function mouseEnter () {
         let card = document.getElementById(`social-card-${social}`)
-        card.classList.add(animationType)
+        card.classList.add(ANIMATION_TYPES.SECONDARY)
         card.addEventListener('animationend', () => {
-            card.classList.remove(animationType)
+            card.classList.remove(ANIMATION_TYPES.SECONDARY)
         });
     }
 
@@ -66,7 +68,7 @@ export function SocialCardItem ({ type, social, title, url }) {
             onMouseEnter={mouseEnter}
             onClick={onClick}
         >
-            <SocialIcon className={`card-social-icon icon-${type}`} size={iconSize}/>
+            {SocialIcon ? <SocialIcon className={`card-social-icon icon-${type}`} size={iconSize}/> : ''}
             <h2 className={`card-social-text text-${type}`} style={{fontSize: `${fontSize}px`}}>{title}</h2>
         </div>
     )

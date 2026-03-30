@@ -1,7 +1,7 @@
 export const COLORS = {
     'linkedin': '0072b1',
     'github': '333333',
-    'resume': 'cccccc'
+    'resume': '777777',
 }
 
 export const SIZES = {

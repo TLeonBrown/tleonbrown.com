@@ -32,7 +32,7 @@ html * {
 }
 
 .infobox-2a-profile {
-  width: 40%;
+  width: 35%;
   @media screen and (max-width: 600px) {
     width: 95%;
     margin-top: 20%;
@@ -40,31 +40,27 @@ html * {
 }
 
 .infobox-2b-socials {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2%;
-  width: 60%;
+  width: 65%;
   @media screen and (max-width: 600px) {
     width: 95%;
   }
 }
 
-.infobox-3a-mainpages, .infobox-3b-subpages, .infobox-3c-subpages {
+.infobox-3a-mainpages {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-
-.infobox-3a-mainpages {
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.infobox-3a-mainpages, .infobox-3b-subpages, .infobox-3c-subpages {
   @media screen and (max-width: 600px) {
     margin-top: 2%;
     margin-bottom: 2%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -78,4 +74,19 @@ html * {
     top: 10vh;
     margin-left: 0;
   }
+}
+
+.infobox-2c-about-me {
+  margin-top: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.about-me-line {
+  margin-bottom: 4vh;
+  font-size: 18px;
+}
+
+.infobox-2d-more {
+  width: 50%;
 }
