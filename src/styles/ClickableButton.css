@@ -13,7 +13,6 @@
 
 .back-button-container {
     display: flex;
-    width: 101%;
     @media screen and (max-width: 600px) {
         align-items: center;
         justify-content: center;

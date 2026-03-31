@@ -92,3 +92,11 @@ html * {
 .infobox-2d-more {
   width: 50%;
 }
+
+.credits-page-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.credits-box {
+}

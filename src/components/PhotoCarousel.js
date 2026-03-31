@@ -19,7 +19,6 @@ function CarouselItem({ item, index, itemWidth, trackItemOffset, x, transition }
       className='carousel-item'
       style={{
         width: itemWidth,
-        height: '95%',
         rotateY: rotateY,
       }}
       transition={transition}
@@ -29,7 +28,6 @@ function CarouselItem({ item, index, itemWidth, trackItemOffset, x, transition }
             alt={item.altText}
             className='carousel-item-image'
             src={item.srcPath}
-            width='120%'
         />
       </div>
     </motion.div>
@@ -113,7 +111,7 @@ export default function PhotoCarousel({
           perspective: 1000,
           perspectiveOrigin: `${position * trackItemOffset + itemWidth / 2}px 50%`,
           x,
-          height: itemWidth * 1.67
+          height: itemWidth * 1.5
         }}
         animate={{ x: -(position * trackItemOffset) }}
         transition={effectiveTransition}
