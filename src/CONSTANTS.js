@@ -1,3 +1,9 @@
+import gallery1 from './img/Gallery_1.jpeg'
+import gallery2 from './img/Gallery_2.jpeg'
+import gallery3 from './img/Gallery_3.jpeg'
+import gallery4 from './img/Gallery_4.jpeg'
+import gallery5 from './img/Gallery_5.jpeg'
+
 export const COLORS = {
     'linkedin': '0072b1',
     'github': '333333',
@@ -22,5 +28,32 @@ export const TEXTS = {
         'I am a passionate & creative software developer, with an eye for visual design. Through my work experience, education, and independent projects, I\'ve honed my skills as both a software engineer and a digital media artist.',
         'From leading large-scale web initiatives at Paramount Global, to developing intuitive data dashboards at Spheryx, to single-handedly managing websites for small businesses & non-profits, I have a wide range of skills, experiences, and passions in the world of software development & beyond.'
     ]
-
 }
+
+export const PHOTO_CAROUSEL_IMAGES = [
+    {
+        srcPath: gallery1,
+        altText: '',
+        id: 1,
+    },
+    {
+        srcPath: gallery2,
+        altText: '',
+        id: 1,
+    },
+    {
+        srcPath: gallery3,
+        altText: '',
+        id: 1,
+    },
+    {
+        srcPath: gallery4,
+        altText: '',
+        id: 1,
+    },
+    {
+        srcPath: gallery5,
+        altText: '',
+        id: 1,
+    },
+]

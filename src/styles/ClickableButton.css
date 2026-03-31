@@ -1,8 +1,8 @@
-.credits-button {
+.credits-button-container {
     color: white;
     border-radius: 20px;
-    /* filter: drop-shadow(7px 7px 0px #888888); */
-    padding: 1vh 1vh 1vh 1vh;
+    filter: drop-shadow(7px 7px 0px #888888);
+    padding: 2vh 1vh 2vh 1vh;
     border: none;
     margin: 0%;
     cursor: pointer;

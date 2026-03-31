@@ -23,13 +23,11 @@ export function CreditsButton () {
     return (
         <div 
             id='profile-button-credits'
-            className='credits-button animate__animated'
+            className='credits-button-container animate__animated'
             onMouseEnter={mouseEnter}
             onClick={onClick}
         >
-            <button className='credits-button'>
-                More About Me!
-            </button>
+            More About Me!
         </div>
     )
 }

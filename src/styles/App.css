@@ -1,5 +1,7 @@
 html {
   background-color: #dddddd;
+  background-image: url('../img/Background_NZ.JPG');
+  background-size: 100%;
 }
 
 html * {
