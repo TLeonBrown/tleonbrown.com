@@ -1,10 +1,12 @@
 .carousel-container {
   overflow: hidden;
   margin-bottom: -3%;
+  border-radius: 20px;
 }
 
 .carousel-track {
   display: flex;
+  border-radius: 20px;
 }
 
 .carousel-item {
@@ -13,6 +15,7 @@
   flex-direction: column;
   background-color: transparent;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .carousel-item-image {

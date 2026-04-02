@@ -1,7 +1,7 @@
 import 'animate.css'
 import './styles/App.css';
 import { SocialCardItem } from './components/SocialCardItem';
-import { CreditsButton } from './components/CreditsButton';
+import { NavButton } from './components/NavButton';
 
 import { TEXTS } from './CONSTANTS';
 
@@ -39,7 +39,7 @@ export function Home () {
                         })}
                     </div>
                     <div className='infobox-2d-more'>
-                        <CreditsButton />
+                        <NavButton url='credits' text='More About Me!'/>
                     </div>
                 </div>
             </div>

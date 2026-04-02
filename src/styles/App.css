@@ -37,7 +37,6 @@ html * {
   width: 35%;
   @media screen and (max-width: 600px) {
     width: 95%;
-    margin-top: 20%;
   }
 }
 
@@ -91,12 +90,47 @@ html * {
 
 .infobox-2d-more {
   width: 50%;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 }
 
 .credits-page-container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.credits-box {
+.credits-infobox-outer {
+  background-color: #ffffff;
+  margin-top: 10vh;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  filter: drop-shadow(7px 7px 0px #545454);
+  @media screen and (max-width: 600px) {
+    height: 120vh;
+    margin-bottom: 10%;
+    flex-direction: column;
+  }
+}
+
+.credits-about-me {
+  text-align: left;
+}
+
+.credits-box-left {
+  align-items: center;
+}
+
+.credits-box-right {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 }

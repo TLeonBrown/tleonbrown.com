@@ -41,6 +41,7 @@ export default function PhotoCarousel({
   autoplayDelay = 3000,
   pauseOnHover = true,
   loop = true,
+  heightRatio = 1.4,
 }) {
   const containerPadding = 0;
   const itemWidth = baseWidth - containerPadding * 2;
@@ -111,7 +112,7 @@ export default function PhotoCarousel({
           perspective: 1000,
           perspectiveOrigin: `${position * trackItemOffset + itemWidth / 2}px 50%`,
           x,
-          height: itemWidth * 1.5
+          height: itemWidth * heightRatio
         }}
         animate={{ x: -(position * trackItemOffset) }}
         transition={effectiveTransition}

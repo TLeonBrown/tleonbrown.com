@@ -14,7 +14,7 @@ export const SIZES = {
     FONT_SIZE_MAIN: 36,
     FONT_SIZE_SECONDARY: 20,
     ICON_SIZE_MAIN: 100,
-    ICON_SIZE_SECONDARY: 60
+    ICON_SIZE_SECONDARY: 40
 }
 
 export const ANIMATION_TYPES = {
@@ -27,6 +27,11 @@ export const TEXTS = {
     HOME_SECONDARY: [
         'I am a passionate & creative software developer, with an eye for visual design. Through my work experience, education, and independent projects, I\'ve honed my skills as both a software engineer and a digital media artist.',
         'From leading large-scale web initiatives at Paramount Global, to developing intuitive data dashboards at Spheryx, to single-handedly managing websites for small businesses & non-profits, I have a wide range of skills, experiences, and passions in the world of software development & beyond.'
+    ],
+    CREDITS_ABOUT_ME: [
+        'Outside of work, I\'m a bit of a fitness enthusiast -- between running, biking, and weightlifting, I\'ve got quite a lot of hobbies that keep me active!',
+        'I also love to travel. In 2025 alone, I visited San Francisco, Amsterdam, the Finger Lakes in Upstate New York, Colorado, Vancouver, and the UK!',
+        'On the carousel to your left, I\'ve included a handful of photos from my travels over the past couple years. Unfortunately, my travel plans are on pause right now due to being between jobs, but once my career is in a more stable position, I fully intend on seeing the world once again!'
     ]
 }
 

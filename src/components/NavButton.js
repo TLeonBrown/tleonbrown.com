@@ -2,7 +2,7 @@ import '../styles/ClickableButton.css';
 import { ANIMATION_TYPES } from '../CONSTANTS'
 import { useNavigate } from 'react-router';
 
-export function CreditsButton () {
+export function NavButton ({ url, text }) {
 
     let navigate = useNavigate();
 
@@ -17,7 +17,7 @@ export function CreditsButton () {
 
     // Send user to the appropriate URL on click
     function onClick () {
-        navigate('/credits')
+        navigate(`/${url}`)
     }
 
     return (
@@ -27,7 +27,7 @@ export function CreditsButton () {
             onMouseEnter={mouseEnter}
             onClick={onClick}
         >
-            More About Me!
+            {text}
         </div>
     )
 }

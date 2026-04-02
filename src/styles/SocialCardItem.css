@@ -27,7 +27,12 @@
     align-items: center;
     justify-content: center;
     vertical-align: middle;
+    margin-top: 1.5%;
     margin-right: 3%;
+    @media screen and (max-width: 600px) {
+        margin-left: 10%;
+        margin-right: -5%;
+    }
 }
 
 .card-social-text {
